@@ -34,7 +34,7 @@ class User < ApplicationRecord
   end
   
     
-  def favorite(micropost)
+  def add_favorite(micropost)
     favorites.find_or_create_by(micropost_id: micropost.id)
   end
   
