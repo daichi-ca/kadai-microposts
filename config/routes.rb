@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'toppages#index'
-  
+  get 'fav_microposts', to: 'toppages#fav_index'
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
